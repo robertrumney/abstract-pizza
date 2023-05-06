@@ -49,3 +49,38 @@ public abstract class Pizza
     }
 }
 ```
+
+### Concrete Pizza Classes
+
+Concrete pizza classes, such as MargheritaPizza and PepperoniPizza, inherit from the abstract Pizza class. They provide their specific implementations of the Prepare() method and define their unique ingredients.
+
+```csharp
+public class MargheritaPizza : Pizza
+{
+    public MargheritaPizza()
+    {
+        Name = "Margherita";
+        Ingredients = new List<string> { "Tomato Sauce", "Mozzarella Cheese", "Basil" };
+    }
+
+    public override void Prepare()
+    {
+        // Preparation logic for Margherita pizza
+    }
+}
+
+public class PepperoniPizza : Pizza
+{
+    public PepperoniPizza()
+    {
+        Name = "Pepperoni";
+        Ingredients = new List<string> { "Tomato Sauce", "Mozzarella Cheese", "Pepperoni" };
+    }
+
+    public override void Prepare()
+    {
+        // Preparation logic for Pepperoni pizza
+    }
+}
+```
+
