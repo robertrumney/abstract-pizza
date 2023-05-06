@@ -84,3 +84,40 @@ public class PepperoniPizza : Pizza
 }
 ```
 
+### PizzaStore Class
+
+The PizzaStore class is responsible for creating pizza objects based on the requested type. It has an OrderPizza() method that takes a string representing the pizza type and returns an instance of the corresponding pizza class.
+
+```csharp
+public class PizzaStore
+{
+    public Pizza OrderPizza(string type)
+    {
+        Pizza pizza;
+
+        if (type == "Margherita")
+        {
+            pizza = new MargheritaPizza();
+        }
+        else if (type == "Pepperoni")
+        {
+            pizza = new PepperoniPizza();
+        }
+        else
+        {
+            throw new ArgumentException("Invalid pizza type");
+        }
+
+        pizza.Prepare();
+        pizza.Bake();
+        pizza.Cut();
+        pizza.Box();
+
+        return pizza;
+    }
+}
+```
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
