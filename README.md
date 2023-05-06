@@ -18,3 +18,34 @@ In this example, we have:
 1. An abstract base class called `Pizza` that holds common properties and methods for different types of pizzas.
 2. Concrete pizza classes (e.g., `MargheritaPizza` and `PepperoniPizza`) that inherit from the abstract `Pizza` class and provide their implementation of the `Prepare()` method.
 3. A simple `PizzaStore` class that demonstrates how to create and interact with pizza objects.
+
+## Base Classes Explanation
+
+### Abstract Pizza Class
+
+The `Pizza` class is an abstract base class that represents a generic pizza. It contains common properties and methods that all pizzas share. Concrete pizza classes will inherit from this base class and provide their specific implementations.
+
+```csharp
+public abstract class Pizza
+{
+    public string Name { get; protected set; }
+    protected List<string> Ingredients;
+
+    public abstract void Prepare();
+
+    public void Bake()
+    {
+        // Baking logic
+    }
+
+    public void Cut()
+    {
+        // Cutting logic
+    }
+
+    public void Box()
+    {
+        // Boxing logic
+    }
+}
+```
