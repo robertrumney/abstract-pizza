@@ -1,8 +1,3 @@
-
-Here's a formatted README.md for the pizza example demonstrating abstract classes in Unity C#. You can copy and paste it directly into GitHub.
-
-markdown
-Copy code
 # Unity C# Pizza Example: Abstract Classes
 
 This repository contains a simple Unity C# project demonstrating the use of abstract classes with the concept of pizza. The purpose of this educational resource is to help people understand the basics of abstract classes in Unity C# by using pizza examples, recipes, variations, and ingredients.
